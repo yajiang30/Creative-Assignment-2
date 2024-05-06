@@ -7,3 +7,9 @@ div {
   margin-right: auto;
   margin-top: 5rem;
 }
+
+@media (max-width: 768px) {
+  div {
+    width: 100%;
+  }
+}
