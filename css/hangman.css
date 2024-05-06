@@ -1,0 +1,103 @@
+/* HANGMAN CSS */
+#hangingman-img {
+  display: inline-block;
+  min-width: 0;
+  max-width: 100%;
+  width: 30%;
+}
+
+img {
+  min-width: 0;
+  max-width: 100%;
+  width: 30%;
+}
+
+#hidden-word {
+  display: inline-block;
+  text-align: center;
+  white-space: pre;
+  font-size: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+#gameboard {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#word-display > * {
+  padding: 2rem 0 3rem 0;
+}
+
+#guessed-letter-border {
+  height: 30vh;
+  width: 30vw;
+  border: black solid 10px;
+  text-align: center;
+}
+
+#wrong-guessed-letters {
+  font-size: 3em;
+}
+
+#input-section {
+  padding: 0.5rem 0 3rem 0;
+}
+
+#animal-btn:hover {
+  /* width: 150px; */
+  color: #19f006;
+  font-weight: bold;
+  /* font-size: 2.1em; */
+  box-shadow: 10px 10px 8px #888888;
+  transform: scale(1.1);
+}
+
+#object-btn:hover {
+  color: yellow;
+  /* width: 160px; */
+  font-weight: bold;
+  /* font-size: 2.1em; */
+  box-shadow: 10px 10px 8px #888888;
+  transform: scale(1.1);
+}
+
+#school-btn:hover {
+  /* width: 150px; */
+  color: red;
+  font-weight: bold;
+  /* font-size: 2.1em; */
+  box-shadow: 10px 10px 8px #888888;
+  transform: scale(1.1);
+}
+
+#play-again:hover {
+  font-weight: bold;
+  box-shadow: 10px 10px 8px #888888;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  #hangingman-img {
+    padding: 10px;
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  #gameboard {
+    display: inline;
+  }
+
+  #guessed-letter-border {
+    height: 20vh;
+    width: 90vw;
+    border: black solid 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

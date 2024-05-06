@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="css/memorycardgame.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <!--
+    From ANSHIKA1806 on github. MIT license. https://github.com/ANSHIKA1806/CardFlip_Game
+  -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="hangman.html">Hangman</a>
+        </li>
+        <li>
+          <a href="rockpaperscissors.html">Rock Paper Scissors</a>
+        </li>
+        <li>
+          <a href="numberguesser.html">Number Guesser</a>
+        </li>
+        <li>
+          <a href="memorycardgame.html">Memory Card Game</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container"> 
+    <h1>Memory Game</h1>
+
+    <!--Start modal section-->
+    <section class="start-game-modal">
+      <div id="start-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <h2>Welcome!</h2>
+          <p>Choose the game mode</p>
+          <div class="modal-content-options">
+            <button class="btn play-again-btn" id="easyGame">Easy</button>
+            <button class="btn play-again-btn" id="mediumGame">Medium</button>
+            <button class="btn play-again-btn" id="hardGame">Hard</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal section-->
+
+    <section class="win-game-modal">
+      <section class="score-panel">
+        <div class="timer-container">⏱ <span class="timer">00:00</span></div>
+        <ul id="star-rating" class="star-rating">
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+        </ul>
+        <span>
+          <span class="moves-counter">0</span>
+          Moves
+        </span>
+        <button class="btn reset-btn">
+          <i class="fa fa-repeat"></i>
+        </button>
+      </section>
+
+      <div id="modal" class="modal win">
+        <!-- Modal content -->
+        <div class="modal-content" id="win-modal-content">
+          <div id="modal-details">
+            <span class="close">&times;</span>
+            <h2>Congratulations!</h2>
+            <p>You have won the game and found all pairs of cards.</p>
+            <img class="modal-img" src="img/thumb_up.jpg" alt="Vault boy giving the thumbs up from the game fall out" />
+            <button class="btn play-again-btn" id="play-again">
+              Play Again?
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <ul class="deck"></ul>
+  </div>
+  <footer>Copyright &copy; 2024 Nostalgic School Games</footer>
+  <script src="js/memorycardgame.js"></script>
+</body>
+
+</html>

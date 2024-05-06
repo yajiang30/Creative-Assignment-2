@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="css/hangman.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/hangman.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="hangman.html">Hangman</a>
+        </li>
+        <li>
+          <a href="rockpaperscissors.html">Rock Paper Scissors</a>
+        </li>
+        <li>
+          <a href="numberguesser.html">Number Guesser</a>
+        </li>
+        <li>
+          <a href="memorycardgame.html">Memory Card Game</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Hangman</h1>
+    <!--Start modal section-->
+    <section class="start-game-modal">
+      <div id="start-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <h2>Welcome!</h2>
+          <p>Choose a category</p>
+          <div class="modal-content-options">
+            <button class="btn play-again-btn" id="animal-btn" value="animals">Animals</button>
+            <button class="btn play-again-btn" id="object-btn" value="objects">Objects</button>
+            <button class="btn play-again-btn" id="school-btn" value="school">School Related Thing</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="win-game-modal">
+    <div id="modal" class="modal win">
+      <div class="modal-content" id="win-modal-content">
+        <div id="modal-details">
+          <span class="close">&times;</span>
+          <h2 id="result-text"></h2>
+          <p id="output-text"></p>
+          <img class="modal-img" src="img/thumb_up.jpg" alt="Vault boy giving the thumbs up from the game fall out" />
+          <button class="btn play-again-btn" id="play-again">
+            Play Again?
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="gameboard">
+    <img id="hangman-img" src="img/hangman-0.png" alt="hangman with no wrong guess">
+    <div id="word-display">
+      <p id="hidden-word"></p>
+      <div id="guessed-letter-border">
+        <p id="wrong-guessed-letters"></p>
+      </div>
+    </div>
+  </div>
+  <div id="input-section">
+    <input type="text" id="guess-input">
+    <button id="guess-btn">guess</button>
+  </div>
+  <footer>Copyright &copy; 2024 Nostalgic School Games</footer>
+</body>
+
+</html>

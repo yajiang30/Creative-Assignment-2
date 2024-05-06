@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rockpaperscissors.css">
+  <script src="js/rockpaperscissors.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="hangman.html">Hangman</a>
+        </li>
+        <li>
+          <a href="rockpaperscissors.html">Rock Paper Scissors</a>
+        </li>
+        <li>
+          <a href="numberguesser.html">Number Guesser</a>
+        </li>
+        <li>
+          <a href="memorycardgame.html">Memory Card Game</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <!--Start modal section-->
+    <section class="start-game-modal">
+      <div id="start-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <h2>Welcome!</h2>
+          <p>Choose the game mode</p>
+          <div class="modal-content-options">
+            <button class="btn play-again-btn" id="normal-btn" value="normal">Normal</button>
+            <button class="btn play-again-btn" id="impossible-btn" value="impossible">Impossible</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="win-game-modal">
+    <div id="modal" class="modal win">
+      <div class="modal-content" id="win-modal-content">
+        <div id="modal-details">
+          <span class="close">&times;</span>
+          <h2 id="result-text"></h2>
+          <p id="output-text"></p>
+          <img class="modal-img" src="img/thumb_up.jpg" alt="Vault boy giving the thumbs up from the game fall out" />
+          <button class="btn play-again-btn" id="play-again">
+            Play Again?
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <h1>Rock Paper Scissors</h1>
+    <h2>Best of 5! (First to 3)</h2>
+    <p>Player: <span id="player-win-count">0</span></p>
+    <p>Computer: <span id="computer-win-count">0</span></p>
+    <img src="img/rock.jpeg" alt="rock" id="rock" class="move-choice">
+    <img src="img/paper.jpeg" alt="paper" id="paper" class="move-choice">
+    <img src="img/scissors.jpeg" alt="scissors" id="scissors" class="move-choice">
+    <p id="results"></p>
+    <button id="rematch-btn">Rematch</button>
+  </main>
+  <footer>Copyright &copy; 2024 Nostalgic School Games</footer>
+</body>
+
+</html>
